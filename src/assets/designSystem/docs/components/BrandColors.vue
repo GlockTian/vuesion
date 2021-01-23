@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br />
     <div v-for="section in colorSections" :key="section.name">
       <vue-headline level="4">
         {{ section.name.toUpperCase() }}
@@ -55,16 +56,17 @@ export default {
 @import '~@/assets/design-system';
 
 .section {
+  padding: $space-32 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: $space-12;
+  grid-gap: $space-16;
   grid-auto-rows: 200px;
 
   div {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--brand-elevation-2);
+    box-shadow: var(--brand-elevation-3);
     border-radius: var(--brand-border-radius-sm);
     padding: $space-16;
 
@@ -79,15 +81,18 @@ export default {
 
 :export {
   brand_variations-brand-primary: var(--brand-primary);
-  brand_variations-brand-secondary: var(--brand-secondary);
-  brand_variations-brand-success: var(--brand-success);
-  brand_variations-brand-warning: var(--brand-warning);
+  brand_variations-brand-neutral: var(--brand-neutral);
   brand_variations-brand-danger: var(--brand-danger);
+  brand_variations-brand-warning: var(--brand-warning);
+  brand_variations-brand-success: var(--brand-success);
+  brand_variations-brand-info: var(--brand-info);
 
-  background_Colors-brand-bg-color: var(--brand-primary-bg-color);
-  background_Colors-brand-bg-color-variant: var(--brand-secondary-bg-color);
-  background_Colors-brand-bg-color-inverse: var(--brand-primary-bg-color-inverse);
-  background_Colors-brand-bg-color-variant-inverse: var(--brand-secondary-bg-color-inverse);
+  background_Colors-brand-primary-bg-color: var(--brand-primary-bg-color);
+  background_Colors-brand-secondary-bg-color-variant: var(--brand-secondary-bg-color);
+  background_Colors-brand-tertiary-bg-color-variant: var(--brand-tertiary-bg-color);
+  background_Colors-brand-primary-bg-color-inverse: var(--brand-primary-bg-color-inverse);
+  background_Colors-brand-secondary-bg-color-variant-inverse: var(--brand-secondary-bg-color-inverse);
+  background_Colors-brand-tertiary-bg-color-variant-inverse: var(--brand-tertiary-bg-color-inverse);
 
   text_Colors-brand-high-emphasis-text-color: var(--brand-high-emphasis-text-color);
   text_Colors-brand-text-medium-emphasis-color: var(--brand-medium-emphasis-text-color);

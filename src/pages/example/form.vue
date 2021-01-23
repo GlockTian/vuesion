@@ -17,7 +17,8 @@ import VueGridColumn from '@/components/organisms/VueGrid/VueGridColumn/VueGridC
 import FormExample from '@/components/organisms/FormExample/FormExample.vue';
 
 export default {
-  name: 'FormExample',
+  name: 'FormExamplePage',
+  auth: false,
   components: {
     FormExample,
     VueGridColumn,

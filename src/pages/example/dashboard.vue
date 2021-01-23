@@ -63,7 +63,7 @@ import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
 import VueButton from '@/components/atoms/VueButton/VueButton.vue';
 
 export default defineComponent({
-  name: 'Dashboard',
+  name: 'DashboardPage',
   components: {
     VueBreadcrumb,
     VueGrid,
@@ -72,7 +72,6 @@ export default defineComponent({
     VueGridRow,
     VueHeadline,
   },
-  middleware: 'auth',
   setup() {
     const { $axios } = useContext();
     const pending = ref(false);

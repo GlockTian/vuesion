@@ -118,7 +118,7 @@ export default {
     transform: translate(-50%, -50%);
 
     .github {
-      font-size: $font-size-h1;
+      font-size: $text-8;
       display: inline-block;
       background: var(--brand-primary-bg-color);
 
@@ -127,8 +127,8 @@ export default {
       }
 
       i {
-        height: $font-size-h1;
-        width: $font-size-h1;
+        height: $text-8;
+        width: $text-8;
       }
     }
   }

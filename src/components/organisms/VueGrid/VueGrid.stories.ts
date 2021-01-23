@@ -183,7 +183,7 @@ story.add(
           </vue-grid-row>
           <vue-grid-row>
             <vue-grid-column>
-              <vue-button color="secondary" block>Item 1</vue-button>
+              <vue-button color="neutral" block>Item 1</vue-button>
             </vue-grid-column>
           </vue-grid-row>
           <vue-grid-row>
@@ -210,7 +210,7 @@ story.add(
           </vue-grid-row>
           <vue-grid-row>
             <vue-grid-column>
-              <vue-button color="secondary" block>item 1</vue-button>
+              <vue-button color="neutral" block>item 1</vue-button>
             </vue-grid-column>
           </vue-grid-row>
           <vue-grid-row vertical-space="none">

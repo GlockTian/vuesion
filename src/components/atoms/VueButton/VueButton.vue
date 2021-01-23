@@ -23,7 +23,7 @@
 <script lang="ts">
 import { defineComponent, computed } from '@vue/composition-api';
 import { getDomRef } from '@/composables/get-dom-ref';
-import { variationValidator } from '@/components/prop-validators';
+import { colorVariationValidator } from '@/components/prop-validators';
 import VueLoader from '../VueLoader/VueLoader.vue';
 
 export default defineComponent({
@@ -34,7 +34,7 @@ export default defineComponent({
   props: {
     disabled: { type: Boolean, default: false },
     block: { type: Boolean, default: false },
-    color: { type: String, validator: variationValidator, default: 'default' },
+    color: { type: String, validator: colorVariationValidator, default: 'neutral' },
     loading: { type: Boolean, default: false },
     ghost: { type: Boolean, default: false },
     as: { type: String, default: 'button' },

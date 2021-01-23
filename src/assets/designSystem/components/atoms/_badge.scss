@@ -6,7 +6,7 @@
   )
 );
 $badge-padding: $space-4 $space-8;
-$badge-font-size: $font-size-sm;
+$badge-font-size: $text-1;
 $badge-line-height: inherit;
 $badge-letter-spacing: inherit;
 $badge-border-radius: var(--brand-border-radius-sm);
@@ -15,28 +15,28 @@ $badge-font-weight: $font-weight-regular;
 $badge-outlined-border-width: 1px;
 
 $badge-variations: (
-  'default': (
-    'bg': var(--brand-default),
-    'color': var(--brand-high-emphasis-text-color-inverse),
-  ),
   'primary': (
     'bg': var(--brand-primary),
     'color': var(--button-color),
   ),
-  'secondary': (
-    'bg': var(--brand-secondary),
+  'neutral': (
+    'bg': var(--brand-neutral),
+    'color': var(--button-color),
+  ),
+  'danger': (
+    'bg': var(--brand-danger),
+    'color': var(--brand-high-emphasis-text-color-inverse),
+  ),
+  'warning': (
+    'bg': var(--brand-warning),
     'color': var(--button-color),
   ),
   'success': (
     'bg': var(--brand-success),
     'color': var(--button-color),
   ),
-  'warning': (
-    'bg': var(--brand-warning),
+  'info': (
+    'bg': var(--brand-info),
     'color': var(--button-color),
-  ),
-  'danger': (
-    'bg': var(--brand-danger),
-    'color': var(--brand-high-emphasis-text-color-inverse),
   ),
 );

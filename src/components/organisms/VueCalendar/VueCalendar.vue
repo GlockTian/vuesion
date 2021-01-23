@@ -545,7 +545,7 @@ export default defineComponent({
   }
 
   .selected {
-    font-size: $font-size-h4;
+    font-size: $text-4;
     color: $calendar-selected-day-color;
     background: $calendar-selected-day-bg;
 

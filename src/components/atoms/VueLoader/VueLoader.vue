@@ -9,12 +9,12 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api';
-import { spacingValidator, variationValidator } from '@/components/prop-validators';
+import { spacingValidator, colorVariationValidator } from '@/components/prop-validators';
 
 export default defineComponent({
   name: 'VueLoader',
   props: {
-    color: { type: String, validator: variationValidator, default: 'default' },
+    color: { type: String, validator: colorVariationValidator, default: 'neutral' },
     size: { type: String, validator: spacingValidator, default: 'sm' },
   },
 });

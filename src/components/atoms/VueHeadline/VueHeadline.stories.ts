@@ -2,19 +2,27 @@ import { storiesOf } from '@storybook/vue';
 import { textVariations } from '@/components/prop-validators';
 import VueHeadline from './VueHeadline.vue';
 
-const story = storiesOf('Atoms|Headline', module) as any;
+const story = storiesOf('Design System|Typography|Headlines', module) as any;
 
 story.add(
-  'Headlines regular',
+  'Headline Levels',
   () => ({
     components: { VueHeadline },
     template: `<div>
-<vue-headline level="1">Headline 1</vue-headline>
-<vue-headline level="2">Headline 2</vue-headline>
-<vue-headline level="3">Headline 3</vue-headline>
-<vue-headline level="4">Headline 4</vue-headline>
-<vue-headline level="5">Headline 5</vue-headline>
-<vue-headline level="6">Headline 6</vue-headline>
+    <vue-headline level="1">Headline 1</vue-headline>
+    <vue-headline level="2">Headline 2</vue-headline>
+    <vue-headline level="3">Headline 3</vue-headline>
+    <vue-headline level="4">Headline 4</vue-headline>
+    <vue-headline level="5">Headline 5</vue-headline>
+    <vue-headline level="6">Headline 6</vue-headline>
+    <br/>
+    <br/>
+    <vue-headline level="1" serifs>Headline 1</vue-headline>
+    <vue-headline level="2" serifs>Headline 2</vue-headline>
+    <vue-headline level="3" serifs>Headline 3</vue-headline>
+    <vue-headline level="4" serifs>Headline 4</vue-headline>
+    <vue-headline level="5" serifs>Headline 5</vue-headline>
+    <vue-headline level="6" serifs>Headline 6</vue-headline>
 </div>`,
   }),
   {
@@ -25,7 +33,7 @@ story.add(
 );
 
 story.add(
-  'Semantic headline with different style',
+  'Headline with different appearance level',
   () => ({
     components: { VueHeadline },
     template: `<div>
@@ -40,7 +48,7 @@ story.add(
 );
 
 story.add(
-  'DIV as headline',
+  'Headline without semantics',
   () => ({
     components: { VueHeadline },
     template: `<div>
@@ -55,7 +63,7 @@ story.add(
 );
 
 story.add(
-  'Colors',
+  'Headline Colors',
   () => ({
     components: { VueHeadline },
     data() {
@@ -64,7 +72,7 @@ story.add(
       };
     },
     template: `<div>
-    <vue-headline v-for="color in textVariations" :key="color" :color="color" level="6">
+    <vue-headline v-for="color in textVariations" :key="color" :color="color" level="1">
       {{ color }}
     </vue-headline>
     </div>`,

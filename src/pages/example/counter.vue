@@ -15,7 +15,7 @@
 
       <vue-grid-row>
         <vue-grid-column>
-          <vue-button color="secondary" :loading="incrementPending" @click="increment"> Increment +1 </vue-button>
+          <vue-button color="neutral" :loading="incrementPending" @click="increment"> Increment +1 </vue-button>
 
           <vue-button color="primary" :loading="decrementPending" @click="decrement"> Decrement -1 </vue-button>
         </vue-grid-column>
@@ -34,7 +34,8 @@ import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
 import VueButton from '@/components/atoms/VueButton/VueButton.vue';
 
 export default defineComponent({
-  name: 'Counter',
+  name: 'CounterPage',
+  auth: false,
   components: {
     VueGrid,
     VueGridRow,
