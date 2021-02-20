@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/vue';
-import { brandVariations } from '../../prop-validators';
+import { brandColorVariations } from '../../prop-validators';
 import VueButton from './VueButton.vue';
 
 describe('VueButton.vue', () => {
@@ -63,7 +63,7 @@ describe('VueButton.vue', () => {
     });
 
     test('should render color variations', () => {
-      brandVariations.forEach((variation: string) => {
+      brandColorVariations.forEach((variation: string) => {
         const { container } = render(VueButton, {
           propsData: {
             color: variation,

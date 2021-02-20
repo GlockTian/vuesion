@@ -1,5 +1,5 @@
 import { createLocalVue, mount } from '@vue/test-utils';
-import { brandVariations } from '../../prop-validators';
+import { brandColorVariations } from '../../prop-validators';
 import VueLoader from './VueLoader.vue';
 
 const localVue = createLocalVue();
@@ -36,7 +36,7 @@ describe('VueLoader.vue', () => {
   });
 
   test('renders color variations', () => {
-    brandVariations.forEach((variation: string) => {
+    brandColorVariations.forEach((variation: string) => {
       const wrapper = mount(VueLoader, {
         localVue,
         propsData: {

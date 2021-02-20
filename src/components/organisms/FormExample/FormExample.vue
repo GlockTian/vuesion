@@ -4,7 +4,7 @@
       <form @submit.prevent="onSubmit">
         <vue-grid-row>
           <vue-grid-column>
-            <vue-headline level="2">Form example</vue-headline>
+            <vue-text appearance="h2" as="h2">Form example</vue-text>
           </vue-grid-column>
         </vue-grid-row>
 
@@ -173,14 +173,14 @@ import VueGridRow from '@/components/organisms/VueGrid/VueGridRow/VueGridRow.vue
 import VueGridColumn from '@/components/organisms/VueGrid/VueGridColumn/VueGridColumn.vue';
 import VueButton from '@/components/atoms/VueButton/VueButton.vue';
 import { addNotification } from '@/components/molecules/VueNotificationStack/utils';
-import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
+import VueText from '@/components/atoms/VueText/VueText.vue';
 import VueGrid from '@/components/organisms/VueGrid/VueGrid.vue';
 
 export default {
   name: 'FormExample',
   components: {
     ValidationObserver,
-    VueHeadline,
+    VueText,
     VueButton,
     VueGridColumn,
     VueGridRow,

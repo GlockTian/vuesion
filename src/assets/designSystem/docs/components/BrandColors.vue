@@ -2,9 +2,9 @@
   <div>
     <br />
     <div v-for="section in colorSections" :key="section.name">
-      <vue-headline level="4">
+      <vue-text appearance="h4" as="h4">
         {{ section.name.toUpperCase() }}
-      </vue-headline>
+      </vue-text>
       <div :class="$style.section">
         <div v-for="color in section.colors" :key="color.hex" :style="{ background: color.hex }">
           <span>{{ color.name }}</span>
@@ -15,11 +15,11 @@
 </template>
 
 <script lang="ts">
-import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
+import VueText from '@/components/atoms/VueText/VueText.vue';
 
 export default {
   name: 'BrandColors',
-  components: { VueHeadline },
+  components: { VueText },
   computed: {
     colorSections() {
       const sections: any = {};

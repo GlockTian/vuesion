@@ -9,7 +9,7 @@
 
       <vue-grid-row>
         <vue-grid-column>
-          <vue-headline level="1"> Counter: {{ count }} </vue-headline>
+          <vue-text appearance="h1" as="h1"> Counter: {{ count }} </vue-text>
         </vue-grid-column>
       </vue-grid-row>
 
@@ -30,7 +30,7 @@ import VueGrid from '@/components/organisms/VueGrid/VueGrid.vue';
 import VueGridRow from '@/components/organisms/VueGrid/VueGridRow/VueGridRow.vue';
 import VueGridColumn from '@/components/organisms/VueGrid/VueGridColumn/VueGridColumn.vue';
 import VueBreadcrumb from '@/components/molecules/VueBreadcrumb/VueBreadcrumb.vue';
-import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
+import VueText from '@/components/atoms/VueText/VueText.vue';
 import VueButton from '@/components/atoms/VueButton/VueButton.vue';
 
 export default defineComponent({
@@ -41,7 +41,7 @@ export default defineComponent({
     VueGridRow,
     VueGridColumn,
     VueBreadcrumb,
-    VueHeadline,
+    VueText,
     VueButton,
   },
   setup() {

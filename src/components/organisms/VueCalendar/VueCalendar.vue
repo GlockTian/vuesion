@@ -1,8 +1,9 @@
 <template>
   <div ref="calendarRef" :class="$style.calendar">
     <div :class="$style.header">
-      <vue-headline
-        level="4"
+      <vue-text
+        appearance="h4"
+        as="h4"
         :native="false"
         role="button"
         tabindex="0"
@@ -11,9 +12,10 @@
         @keypress.enter.space.stop.prevent="setSelecting('year')"
       >
         {{ selectedYear }}
-      </vue-headline>
-      <vue-headline
-        level="5"
+      </vue-text>
+      <vue-text
+        appearance="h5"
+        as="h5"
         :native="false"
         role="button"
         tabindex="0"
@@ -22,7 +24,7 @@
         @keypress.enter.space.stop.prevent="setSelecting('date')"
       >
         {{ $d(calculatedDate, 'calendarHeader') }}
-      </vue-headline>
+      </vue-text>
     </div>
 
     <div v-if="selecting === 'date'" :class="$style.body">
@@ -126,7 +128,7 @@ import { computed, defineComponent, ref, onBeforeMount } from '@vue/composition-
 import chunk from 'lodash/chunk';
 import { getDomRef } from '@/composables/get-dom-ref';
 import VueButton from '../../atoms/VueButton/VueButton.vue';
-import VueHeadline from '../../atoms/VueHeadline/VueHeadline.vue';
+import VueText from '../../atoms/VueText/VueText.vue';
 
 interface IDay {
   day: number;
@@ -143,7 +145,7 @@ interface IYear {
 export default defineComponent({
   name: 'VueCalendar',
   components: {
-    VueHeadline,
+    VueText,
     VueButton,
   },
   model: {
