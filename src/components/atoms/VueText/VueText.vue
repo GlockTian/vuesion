@@ -10,6 +10,7 @@
       underline && $style.underline,
       uppercase && $style.uppercase,
     ]"
+    v-on="$listeners"
   >
     <slot />
   </component>

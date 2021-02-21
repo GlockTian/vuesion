@@ -10,7 +10,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="lg">
+        <vue-grid-row vertical-space="32">
           <vue-grid-column>
             <vue-input
               id="username"

@@ -53,9 +53,9 @@ story.add(
     components: { VueButton },
     template: `<div :style="{padding:'32px'}">
 Router-Link<br/>
-<vue-button @click="onClick" as="router-link" color="primary" href="/">Router Link</vue-button>
-<vue-button @click="onClick" as="router-link" color="primary" href="/" disabled>Router Link</vue-button>
-<vue-button @click="onClick" as="router-link" color="primary" href="/" loading>Router Link</vue-button>
+<vue-button @click="onClick" as="nuxt-link" color="primary" href="/">Nuxt Link</vue-button>
+<vue-button @click="onClick" as="nuxt-link" color="primary" href="/" disabled>Nuxt Link</vue-button>
+<vue-button @click="onClick" as="nuxt-link" color="primary" href="/" loading>Nuxt Link</vue-button>
 <br/>
 <br/>
 A-Element: <br/>

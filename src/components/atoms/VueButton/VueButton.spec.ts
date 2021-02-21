@@ -21,7 +21,7 @@ describe('VueButton.vue', () => {
         },
       });
 
-      await fireEvent(getByText('VueButton'), new MouseEvent('click'));
+      await fireEvent(getByText('VueButton').parentElement, new MouseEvent('click'));
 
       const actual = emitted().click;
 
@@ -157,7 +157,7 @@ describe('VueButton.vue', () => {
       e.preventDefault = jest.fn();
       e.stopPropagation = jest.fn();
 
-      await fireEvent(getByText('foo'), e);
+      await fireEvent(getByText('foo').parentElement, e);
 
       expect(e.preventDefault).toHaveBeenCalled();
       expect(e.stopPropagation).toHaveBeenCalled();

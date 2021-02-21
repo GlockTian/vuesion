@@ -29,7 +29,28 @@ export const textStyles = [
   'support',
 ];
 export const fontWeights = ['regular', 'semi-bold'];
-export const brandSpacings = ['none', 'sm', 'md', 'lg'];
+export const brandSpacings = [
+  '0',
+  '2',
+  '4',
+  '8',
+  '12',
+  '16',
+  '20',
+  '24',
+  '32',
+  '40',
+  '48',
+  '52',
+  '56',
+  '64',
+  '72',
+  '84',
+  '96',
+  '120',
+  '128',
+  '192',
+];
 
 export const colorVariationValidator = (value: string) => {
   return brandColorVariations.includes(value.toLowerCase());

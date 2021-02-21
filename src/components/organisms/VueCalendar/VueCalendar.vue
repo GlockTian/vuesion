@@ -3,8 +3,7 @@
     <div :class="$style.header">
       <vue-text
         appearance="h4"
-        as="h4"
-        :native="false"
+        as="div"
         role="button"
         tabindex="0"
         :aria-label="selectedYear"
@@ -15,8 +14,7 @@
       </vue-text>
       <vue-text
         appearance="h5"
-        as="h5"
-        :native="false"
+        as="div"
         role="button"
         tabindex="0"
         :aria-label="$d(calculatedDate, 'calendarHeader')"

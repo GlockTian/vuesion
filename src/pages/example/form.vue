@@ -1,7 +1,7 @@
 <template>
   <vue-grid>
     <vue-grid-row :class="$style.form" justify-content="center" align-items="top">
-      <vue-grid-column vertical-space="lg" width="100%" tablet-landscape="70%" large-desktop="50%" :can-grow="false">
+      <vue-grid-column vertical-space="32" width="100%" tablet-landscape="70%" large-desktop="50%" :can-grow="false">
         <form-example />
       </vue-grid-column>
     </vue-grid-row>

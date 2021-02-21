@@ -15,7 +15,7 @@ export default defineComponent({
   name: 'VueLoader',
   props: {
     color: { type: String, validator: colorVariationValidator, default: 'neutral' },
-    size: { type: String, validator: spacingValidator, default: 'sm' },
+    size: { type: String, validator: spacingValidator, default: '16' },
   },
 });
 </script>
@@ -35,14 +35,11 @@ export default defineComponent({
     padding-top: 100%;
   }
 
-  &.md {
-    width: $loader-medium-size;
-    height: $loader-medium-size;
-  }
-
-  &.lg {
-    width: $loader-large-size;
-    height: $loader-large-size;
+  @each $name, $space in $spacings {
+    &.#{$name} {
+      width: $space;
+      height: $space;
+    }
   }
 
   @each $variation, $color in $loader-variations {

@@ -15,7 +15,7 @@
       click: onClick,
     }"
   >
-    <vue-text v-if="loading === false" :class="$style.text" appearance="button" weight="semi-bold" as="div">
+    <vue-text v-if="loading === false" :class="$style.text" appearance="button" weight="semi-bold" as="span">
       <slot />
     </vue-text>
     <vue-loader v-else :class="$style.loader" />

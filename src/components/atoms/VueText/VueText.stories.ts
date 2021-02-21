@@ -51,7 +51,7 @@ story.add(
     </vue-text>
     <br/>
     <br/>
-    <vue-text v-for="color in textVariations" :key="color" :color="color" as="div" serifs>
+    <vue-text v-for="color in textVariations" :key="color + '_2'" :color="color" as="div" serifs>
       {{ color }}
     </vue-text>
     </div>`,

@@ -8,7 +8,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="none">
+        <vue-grid-row vertical-space="0">
           <vue-grid-column>
             <small>
               This example uses <a href="https://github.com/baianat/vee-validate">vee-validate</a> for field validation.
@@ -16,11 +16,11 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="md">
+        <vue-grid-row vertical-space="16">
           <vue-grid-column />
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="sm">
+        <vue-grid-row vertical-space="8">
           <vue-grid-column>
             <vue-input
               id="firstname"
@@ -32,7 +32,7 @@
               validation="required"
             />
           </vue-grid-column>
-          <vue-grid-column vertical-space="sm">
+          <vue-grid-column vertical-space="8">
             <vue-input
               id="lastname"
               v-model="model.lastname"
@@ -45,7 +45,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="sm">
+        <vue-grid-row vertical-space="8">
           <vue-grid-column>
             <vue-input
               id="email"
@@ -60,7 +60,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="sm">
+        <vue-grid-row vertical-space="8">
           <vue-grid-column>
             <vue-input
               id="street"
@@ -88,7 +88,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="sm">
+        <vue-grid-row vertical-space="8">
           <vue-grid-column>
             <vue-input
               id="city"
@@ -115,7 +115,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="md">
+        <vue-grid-row vertical-space="16">
           <vue-grid-column>
             <vue-checkbox
               id="acceptTerms"
@@ -154,7 +154,7 @@
           </vue-grid-column>
         </vue-grid-row>
 
-        <vue-grid-row vertical-space="lg" justify-content="flex-end">
+        <vue-grid-row vertical-space="32" justify-content="flex-end">
           <vue-grid-column>
             <vue-button color="primary" :disabled="invalid" :loading="isLoading"> Save </vue-button>
           </vue-grid-column>
